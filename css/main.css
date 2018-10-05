@@ -13,7 +13,7 @@
     grid-column-end:2; 
     font-size: 3em;
     /* background-color: lightgray; */
-    margin:10% 0% 0% 0%
+    margin:10% 0% 0% 0%;
 }
 
 .nav {
@@ -27,6 +27,10 @@
     font-size: 1em;
     padding: 0% 2% 0% 2%;
     margin:0;
+    }
+
+    .navicon > ul > li:hover{
+        color:	#20B2AA;
     }
 
     .navbar > ul{
@@ -58,21 +62,62 @@
 }
 
 /*----------About----------*/
-.edu{
-    display:block;
+.undergraduate{
+    display:grid;
+    grid-template-columns: 50% 50%;
     height: 600px;
-    background-color:lightgrey;
+    /* background-color:lightgrey; */
     background-size:cover;
     background-position:center;
 }
-.edu > img{
-    width:30%;
+
+    #sjtu{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-image: url("../imgs/undergraduate.jpg");
+        background-size:cover;
+        background-position:center;
+        margin: 3% 0% 3% 0%;
+    }
+
+    .undergraduate > img{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 50%;
+        margin: 3% 3% 3% 3%;
+    }
+
+.graduate{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    height: 600px;
+    /* background-color:lightpink; */
+    background-size:cover;
+    background-position:center;
 }
+    .graduate > img{
+        margin: 3% 3% 3% 3%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 50%
+    }
+
+
+
+
 
 /*----------Climb----------*/
 .mountains > img{
     width:30%;
 }
+
+
 
 /*----------Contact----------*/
 .contact{
