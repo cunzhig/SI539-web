@@ -1,0 +1,87 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+/*----Nav----*/
+.header h1{
+    grid-column-start: 1;
+    grid-column-end:2; 
+    font-size: 3em;
+    /* background-color: lightgray; */
+    margin:10% 0% 0% 0%
+}
+
+.nav {
+    grid-column-start: 3;
+    grid-column-end: 5; 
+    /* background-color: lightpink; */
+    text-align: right;
+}
+    .navicon > ul > li {
+    display: inline-block;
+    font-size: 1em;
+    padding: 0% 2% 0% 2%;
+    margin:0;
+    }
+
+    .navbar > ul{
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    .navbar > ul > li > a {
+        float:right;
+        color: #858585;
+        text-align: center;
+        padding: 0% 3% 0% 3%;
+        text-decoration: none;
+        font-size:1.3em;
+    }
+
+    .navbar > ul > li > a:hover {
+        color:	#20B2AA;
+    }
+
+/*----Banner----*/
+.banner{
+    display:block;
+    height: 600px;
+    background-image:url("../imgs/banner-bg.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+/*----------About----------*/
+.edu{
+    display:block;
+    height: 600px;
+    background-color:lightgrey;
+    background-size:cover;
+    background-position:center;
+}
+.edu > img{
+    width:30%;
+}
+
+/*----------Climb----------*/
+.mountains > img{
+    width:30%;
+}
+
+/*----------Contact----------*/
+.contact{
+    background-image: url("../imgs/gnj.png");
+    display:block;
+    height: 600px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+
