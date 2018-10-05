@@ -110,13 +110,74 @@
 
 
 
-
-
 /*----------Climb----------*/
-.mountains > img{
-    width:30%;
+.mountains {
+    display:grid;
+    grid-template-columns: fr fr fr;
+    grid-template-rows: fr fr;
+    height: 600px;
+    /* background-color:lightgrey; */
+    background-size:cover;
+    background-position:center;
 }
 
+    #hanna #wugong #zhangjiajie #qilian #gongga #fushi{
+        margin: 3% 0% 3% 0%;
+    }
+    #hanna{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-image: url("../imgs/hanna.jpg");
+        background-size:cover;
+        background-position:center;
+    }
+    #wugong{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-image: url("../imgs/wugong.jpg");
+        background-size:cover;
+        background-position:center;
+    }
+    #zhangjiajie{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-image: url("../imgs/zhangjiajie.jpg");
+        background-size:cover;
+        background-position:center;
+    }
+    #qilian{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-image: url("../imgs/qilian.jpeg");
+        background-size:cover;
+        background-position:center;
+    }
+    #gongga{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-image: url("../imgs/gongga.jpg");
+        background-size:cover;
+        background-position:center;
+    }
+    #fushi{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-image: url("../imgs/fuji.jpg");
+        background-size:cover;
+        background-position:center;
+    }
 
 
 /*----------Contact----------*/
