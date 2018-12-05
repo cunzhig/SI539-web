@@ -6,25 +6,27 @@
     <meta name="author" content="Cunzhi Gao">
     <!-- link ref = "reset.css" default -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/footer-distributed.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src='js/typed.min.js'></script>
     <meta name = ‘viewport’ content=‘width=device-width, initial-scale=1’>
 </head>
 
 <body>
     <!--header-->
     <header class = "header">
-        <h1>Cunzhi Gao</h1>
+        <h1>Home</h1>
         <!--navigation-->
         <nav class="nav">
-            <div class = "navicon"> 
+            <!-- <div class = "navicon"> 
                 <ul>
-                    <li class="far fa-envelope"></li>
-                    <li class="fab fa-facebook-square"></li>
-                    <li class="fab fa-instagram"></li>
-                    <li class="fab fa-github"></li>
+                    <li><a class="far fa-envelope" href="contact.html"></a></li>
+                    <li><a class="fab fa-facebook-square" href="https://www.facebook.com/profile.php?id=100010311337053&ref=bookmarks"></a></li>
+                    <li><a class="fab fa-instagram" href="https://www.instagram.com/laohangao/?hl=en"></a></li>
+                    <li><a class="fab fa-github" href="https://github.com/cunzhig"></a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class = "navbar">
                 <ul>      
                     <li><a href="index.html">Home</a></li>
@@ -38,8 +40,48 @@
 
     <!--banner-->
     <div class="banner">
+        <p class='greeting'></p>
+           
+              
         <!--content-->
-        <p>I'm from University of Michigan, school of information. I want to share my "To Climb List" with you!</p>
+        <!-- <p>I'm from University of Michigan, school of information. I want to share my "To Climb List" with you!</p> -->
     </div>
+
+    <script>
+            var typed = new Typed('.greeting', {
+                    strings: ["Hi!", "I'm Cunzhi.","From University of Michigan,","School of Information","I love UX!"
+                    ,'I love Engineering!',"I love Mountains!"],
+                    loop:true,
+                    typeSpeed: 20
+                });
+    </script>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+            <a href="contact.html"><i class="far fa-envelope"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100010311337053&ref=bookmarks"><i class="fab fa-facebook-square"></i></a>
+            <a href="#https://www.instagram.com/laohangao/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/cunzhig"><i class="fab fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                ·
+                <a href="about.html">About</a>
+                ·
+                <a href="climb.html">Climb</a>
+                ·
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p>Cunzhi Gao &copy; 2018</p>
+        </div>
+
+    </footer>
+    
 </body>
 </html>
