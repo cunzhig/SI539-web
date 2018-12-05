@@ -54,12 +54,12 @@
 
     .navbar > ul > li > a{
         text-decoration: none;
-        color: #858585;
+        color:  #292c2f;
     }
 
     .navbar > ul > li{
         display: inline-block;
-        color: #858585;
+        color:  #292c2f;
         text-align: center;
         padding: 0% 3% 0% 3%;
         text-decoration: none;
